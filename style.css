@@ -12,6 +12,11 @@ body{
     align-items: center;
     height: 100vh;
 }
+
+/* esconder algumas áreas quando necessário */
+.hide{
+    display: none;
+}
 .container {
     background-color: #64087b;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -47,7 +52,9 @@ body{
 }
 
 /*Clima */ 
-#weather-data{
+#weather-data, 
+#error-message,
+#loader{
     border-top: 1px solid #fff;
     margin-top: 1.5rem;
     padding-top: 1.5rem;
@@ -68,7 +75,10 @@ body{
     align-items: center;
     margin: 0.6rem 0;
 }
-
+#description {
+    font-weight: bold;
+    text-transform: capitalize;
+}
 #details-container{
     display: flex;
     justify-content: center;
